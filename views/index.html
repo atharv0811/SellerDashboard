@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>SellerDashboard</title>
+  </head>
+  <body>
+    <div class="container bg-body-tertiary">
+      <h3 class="d-flex justify-content-center">SellerDashboard</h3>
+      <form id="form" class="d-flex justify-content-center">
+        <div class="mx-3 my-1">
+          <label for="productName">Product Name : </label>
+          <input type="text" id="productName" name="productName" required />
+        </div>
+        <div class="mx-3 my-1">
+          <label for="description">Description : </label>
+          <input type="text" id="description" name="description" required />
+        </div>
+        <div class="mx-3 my-1">
+          <label for="price">Price : </label>
+          <input type="number" name="price" id="price" />
+        </div>
+        <div class="mx-3 my-1">
+          <label for="quantity">Quantity : </label>
+          <input type="number" name="quantity" id="quantity" />
+        </div>
+        <input
+          id="submit"
+          type="submit"
+          value="Add"
+          class="btn btn-primary mx-3 my-4 mb-1 px-4 py-0 text-light"
+        />
+      </form>
+      <div class="m-4">
+        <table id="table" class="table">
+          <thead class="text-center">
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Description</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="text-center"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
